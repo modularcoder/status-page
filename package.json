@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist --repo git@github.com:modularcoder/status-page.git --branch gh-pages"
+    "deploy": "npm run build  && echo statuspage.gh.am > ./dist/CNAME  && gh-pages -d dist --repo git@github.com:modularcoder/status-page.git --branch gh-pages"
   },
   "dependencies": {
     "vue": "^3.2.47"
